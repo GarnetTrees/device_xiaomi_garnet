@@ -70,6 +70,9 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
+# Graphics
+USE_OPENGL_RENDERER := true
+
 # Hardware
 BOARD_USES_QCOM_HARDWARE := true
 
