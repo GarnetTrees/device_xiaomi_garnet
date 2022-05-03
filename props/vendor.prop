@@ -200,6 +200,7 @@ ro.config.avoid_gfx_accel=true
 ro.surface_flinger.clear_slots_with_set_layer_buffer=true
 vendor.gralloc.disable_ubwc=0
 renderthread.skia.reduceopstasksplitting=true
+debug.hwui.renderer=skiagl
 
 # Adaptive Suspend
 suspend.short_suspend_threshold_millis=5000
