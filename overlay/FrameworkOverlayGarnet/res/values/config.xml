@@ -909,7 +909,7 @@
 
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
-	
+
 	<!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
   
@@ -921,4 +921,10 @@
     <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_smartChargingSuspendValue" translatable="false">1</string>
     <string name="config_smartChargingResumeValue" translatable="false">0</string>
+     
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/fastchg_mode</string>
+
+    <!-- Expected value from fast charging status file  -->
+    <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
 </resources>
