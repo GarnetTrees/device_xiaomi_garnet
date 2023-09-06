@@ -198,6 +198,9 @@ vendor.pasr.activemode.enabled=false
 # Netflix
 ro.netflix.bsp_rev=Q6450-36256-1
 
+# DisplayFeature
+persist.sys.sf.native_mode=256
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
