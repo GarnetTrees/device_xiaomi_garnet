@@ -59,3 +59,6 @@ persist.log.tag.ACDB-LOADER=S
 persist.log.tag.CVP=S
 persist.log.tag.ResourcesCompat=S
 persist.log.tag.SYNX-UMD=S
+
+# System Server
+persist.arm64.memtag.system_server=off
