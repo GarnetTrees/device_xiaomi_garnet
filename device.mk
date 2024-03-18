@@ -139,6 +139,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default:64 \
     android.hardware.bluetooth@1.0.vendor:64 \
     android.hardware.bluetooth.audio-impl:64 \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth.audio@2.1.vendor:64
 
 PRODUCT_PACKAGES += \
