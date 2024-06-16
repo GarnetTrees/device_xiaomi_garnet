@@ -486,7 +486,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    QtiTelephonyCompat \
 	extphonelib \
     extphonelib-product \
     extphonelib.xml \
@@ -505,6 +504,10 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     xiaomi-telephony-stub
 
+PRODUCT_BOOT_JARS += \
+    telephony-ext \
+    xiaomi-telephony-stub
+	
 $(foreach sku, GL JP, \
     $(eval PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(sku)/android.hardware.telephony.euicc.xml))
