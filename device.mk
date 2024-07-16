@@ -560,6 +560,10 @@ PRODUCT_PACKAGES += \
     libinput_shim \
     libgui_shim
 
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
