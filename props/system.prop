@@ -51,3 +51,8 @@ pm.dexopt.cmdline=speed
 pm.dexopt.first-use=speed-profile
 pm.dexopt.secondary=speed-profile
 pm.dexopt.shared=speed
+
+# QTI Mem Optimisation
+persist.vendor.sys.memplus.enable=false
+ro.vendor.qti.sys.fw.bg_apps_limit=30
+ro.vendor.qti.sys.fw.bservice_limit=60
