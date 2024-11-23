@@ -4,7 +4,7 @@
  */
 
 #include <vector>
-
+#include <sys/sysinfo.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
@@ -50,6 +50,38 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
         property_override(prop_name.c_str(), value.c_str(), false);
     }
 };
+
+// Dalvik VM properties based on system memory
+void load_dalvikvm_properties() {
+    struct sysinfo sys;
+    sysinfo(&sys);
+
+    if (sys.totalram > 12288ull * 1024 * 1024) {
+        // from - phone-xhdpi-16384-dalvik-heap.mk
+        property_override("dalvik.vm.heapstartsize", "32m");
+        property_override("dalvik.vm.heapgrowthlimit", "448m");
+        property_override("dalvik.vm.heapsize", "640m");
+        property_override("dalvik.vm.heaptargetutilization", "0.4");
+        property_override("dalvik.vm.heapminfree", "16m");
+        property_override("dalvik.vm.heapmaxfree", "64m");
+    } else if (sys.totalram > 8192ull * 1024 * 1024) {
+        // from - phone-xhdpi-12288-dalvik-heap.mk
+        property_override("dalvik.vm.heapstartsize", "24m");
+        property_override("dalvik.vm.heapgrowthlimit", "384m");
+        property_override("dalvik.vm.heapsize", "512m");
+        property_override("dalvik.vm.heaptargetutilization", "0.42");
+        property_override("dalvik.vm.heapminfree", "8m");
+        property_override("dalvik.vm.heapmaxfree", "56m");
+    } else {
+        // from - phone-xhdpi-8192-dalvik-heap.mk
+        property_override("dalvik.vm.heapstartsize", "16m");
+        property_override("dalvik.vm.heapgrowthlimit", "384m");
+        property_override("dalvik.vm.heapsize", "512m");
+        property_override("dalvik.vm.heaptargetutilization", "0.75");
+        property_override("dalvik.vm.heapminfree", "512k");
+        property_override("dalvik.vm.heapmaxfree", "8m");
+    }
+}
 
 void vendor_load_properties() {
     std::string region;
@@ -136,4 +168,7 @@ void vendor_load_properties() {
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
     }
+
+    // Load Dalvik VM properties
+    load_dalvikvm_properties();
 }
