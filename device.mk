@@ -49,6 +49,7 @@ $(call soong_config_set,android_hardware_audio,run_64bit,true)
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:64 \
     android.hardware.audio.effect@7.0-impl:64 \
+    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
