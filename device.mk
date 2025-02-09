@@ -169,6 +169,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor:64
 
+# Dexopt
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
+OVERRIDE_DISABLE_DEXOPT_ALL := false
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
