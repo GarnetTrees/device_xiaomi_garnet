@@ -115,7 +115,7 @@ vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
 vendor.display.enable_dpps_dynamic_fps=0
 vendor.display.enable_hdr10_gpu_target=1
-vendor.display.enable_optimize_refresh=0
+vendor.display.enable_optimize_refresh=1
 vendor.display.idle_time=0
 vendor.display.vds_allow_hwc=0
 
