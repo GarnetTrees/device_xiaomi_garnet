@@ -151,7 +151,7 @@ debug.hwui.use_hint_manager=true
 # Graphics
 debug.renderengine.backend=skiavkthreaded
 debug.sf.auto_latch_unsignaled=0
-debug.sf.disable_client_composition_cache=1
+debug.sf.disable_client_composition_cache=0
 debug.sf.early.sf.duration=13100000
 debug.sf.early.app.duration=14600000
 debug.sf.earlyGl.sf.duration=13100000
