@@ -186,6 +186,9 @@ ro.surface_flinger.wcg_composition_dataspace=142671872
 ro.config.avoid_gfx_accel=true
 vendor.gralloc.disable_ubwc=0
 
+# Adaptive Suspend
+suspend.short_suspend_threshold_millis=5000
+
 # Keystore
 ro.hardware.keystore_desede=true
 
