@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Настройки Xiaomi</string>
+    <string name="tile_add">Добавить плитку</string>
+    <string name="tile_added">Добавлена плитка</string>
+    <string name="tile_not_added">Плитка не добавлена</string>
+    <string name="tile_already_added">Уже добавленная плитка</string>
+    <string name="tile_on">Включена</string>
+    <string name="tile_off">Выключена</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Тепловые профили</string>
+    <string name="thermal_enable">Используйте тепловые профили</string>
+    <string name="thermal_summary">Настройка теплового профиля для каждого приложения</string>
+    <string name="thermal_default">По умолчанию</string>
+    <string name="thermal_benchmark">Бенчмарк</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Звонилка</string>
+    <string name="thermal_gaming">Игровой</string>
+    <string name="thermal_navigation">Навигация</string>
+    <string name="thermal_streaming">Стрим</string>
+    <string name="thermal_video">Видео</string>
+
+    <!-- Thermal Tile Strings -->
+    <string name="thermal_tile_label">Тепловой профиль</string>
+    <string name="thermal_mode_default">Режим по умолчанию</string>
+    <string name="thermal_mode_performance">Режим производительности</string>
+    <string name="thermal_mode_battery_saver">Режим экономии заряда батареи</string>
+    <string name="thermal_mode_gaming">Игровой режим</string>
+    <string name="thermal_mode_unknown">Неизвестный режим</string>
+    <string name="thermal_tile_disabled_subtitle">Отключено (включены тепловые профили для каждого приложения)</string>
+
+    <!-- Refresh rate -->
+    <string name="refresh_title">Частота обновления</string>
+    <string name="refresh_summary">Установите максимальную частоту обновления для конкретного приложения</string>
+    <string name="refresh_default">По умолчанию</string>
+    <string name="refresh_standard">60Hz</string>
+    <string name="refresh_extreme">120Hz</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Очистка динамика</string>
+   <string name="clear_speaker_summary">Воспроизведите 30-секундный звуковой сигнал, чтобы очистить динамик</string>
+   <string name="clear_speaker_description">Запустите эту функцию один или два раза, если обнаружите, что динамик слегка забит пылью. Установите максимальную громкость мультимедиа.\n\n Если динамик сильно забит, запустите эту функцию 2-5 раз, встряхивая устройство динамиком вниз.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Насыщенность дисплея</string>
+    <string name="saturation_summary">Настройте уровень насыщенности дисплея</string>
+    <string name="saturation_footer_summary">Изменение цветового режима в настройках дисплея приведет к переопределению уровня насыщенности, что потребует его повторного применения.</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Значение: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">по умолчанию</string>
+    <string name="custom_seekbar_default_value_to_set">Значение по умолчанию: <xliff:g id="v">%s</xliff:g>\длительное нажатие для настройки</string>
+    <string name="custom_seekbar_default_value_is_set">Установлено значение по умолчанию</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Предварительный просмотр</string>
+    <string name="image_preview_next_page_content_description">Следующий</string>
+    <string name="image_preview_previous_page_content_description">Предыдущий</string>
+	
+</resources>
