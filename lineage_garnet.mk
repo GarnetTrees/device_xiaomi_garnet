@@ -19,10 +19,23 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
 $(call inherit-product, vendor/xiaomi/garnet-miuicamera/products/board.mk)
 
-# Device config
-TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Set res to remove warning
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# UDFPS Flags
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Extra Flags
+TARGET_DISABLE_EPPE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Matrixx flags
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_CHIPSET := SM7435-AB
+MATRIXX_BATTERY := 5100 mAh
+MATRIXX_DISPLAY := 1220x2712
+MATRIXX_MAINTAINER := GameNCode
 
 PRODUCT_NAME := lineage_garnet
 PRODUCT_DEVICE := garnet
