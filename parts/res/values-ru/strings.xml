@@ -77,4 +77,13 @@
     <string name="image_preview_next_page_content_description">Следующий</string>
     <string name="image_preview_previous_page_content_description">Предыдущий</string>
 	
+	<!-- GameBar Overlay -->
+    <string name="game_overlay_title">Игровая Панель</string>
+    <string name="game_overlay_summary">Включите системное наложение (FPS, температура и т.д.)</string>
+    <string name="overlay_permission_required">Требуется разрешение на наложение</string>
+    <string name="overlay_permission_granted">Получено разрешение на наложение</string>
+    <string name="overlay_permission_denied">В разрешении на наложение отказано</string>
+    <string name="game_overlay_tile_label">Игровая Панель</string>
+    <string name="game_overlay_tile_description">Переключите режим наложения игры</string>
+	
 </resources>
