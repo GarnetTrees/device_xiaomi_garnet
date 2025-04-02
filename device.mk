@@ -618,5 +618,8 @@ PRODUCT_PACKAGES += \
     libnl:64 \
     libwfdaac_vendor
 
+# Sign
+-include vendor/lineage-priv/keys/keys.mk
+
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
