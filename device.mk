@@ -562,10 +562,6 @@ PRODUCT_PACKAGES += \
     vndservice \
     vndservicemanager
 
-# Gcam
-PRODUCT_PACKAGES += \
-    GoogleCamera
-
 # Verified boot
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
