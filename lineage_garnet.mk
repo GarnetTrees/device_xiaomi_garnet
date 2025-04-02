@@ -15,10 +15,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
-# MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
-$(call inherit-product, vendor/xiaomi/garnet-miuicamera/products/board.mk)
-
 # Device config
 TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
