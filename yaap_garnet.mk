@@ -15,10 +15,6 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
-# MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
-$(call inherit-product, vendor/xiaomi/garnet-miuicamera/products/board.mk)
-
 # YAAP Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_GAPPS := true
