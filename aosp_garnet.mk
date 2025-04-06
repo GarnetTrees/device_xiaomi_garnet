@@ -9,8 +9,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common The Pixel Project stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
@@ -19,11 +19,13 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
 $(call inherit-product, vendor/xiaomi/garnet-miuicamera/products/board.mk)
 
-# YAAP Flags
+# The Pixel Project Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_GAPPS := true
+TARGET_CALL_RECORDING_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP  := true
 
-PRODUCT_NAME := yaap_garnet
+PRODUCT_NAME := aosp_garnet
 PRODUCT_DEVICE := garnet
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

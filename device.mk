@@ -332,6 +332,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Logging
 SPAMMY_LOG_TAGS := \
     MiClstc \
@@ -500,7 +504,24 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    QtiTelephonyCompat
+    QtiTelephonyCompat \
+	extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper.xml \
+    qti_telephony_hidl_wrapper_prd.xml \
+    qti-telephony-utils \
+    qti-telephony-utils-prd \
+    qti_telephony_utils.xml \
+    qti_telephony_utils_prd.xml \
+    QtiTelephonyCompat \
+    telephony-ext \
+    xiaomi-telephony-stub
 
 $(foreach sku, GL JP, \
     $(eval PRODUCT_COPY_FILES += \
