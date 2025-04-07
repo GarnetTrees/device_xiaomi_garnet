@@ -16,8 +16,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
 # MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
-$(call inherit-product, vendor/xiaomi/garnet-miuicamera/products/board.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
 # The Pixel Project Flags
 TARGET_BOOT_ANIMATION_RES := 1080
