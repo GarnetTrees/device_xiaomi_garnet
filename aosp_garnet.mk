@@ -19,10 +19,12 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
 # The Pixel Project Flags
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_CALL_RECORDING_SUPPORTED := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP  := true
+WITH_GMS := true
 
 PRODUCT_NAME := aosp_garnet
 PRODUCT_DEVICE := garnet
